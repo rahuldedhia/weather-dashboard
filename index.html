@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+    <div class="row-md-12">
+    <header class="navbar navbar-dark bg-dark flex-md-nowrap shadow">
+      <a class="navbar-brand col-md-12 mr-0 text-center font-weight-bold" href="#">Weather Dashboard</a><br>
+    </div>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-3 bg-light sidebar">
+          <div class="sidebar-sticky">
+          <div>
+            <input class="my-3" placeholder="Search City" id="citySearch"></input>
+          </div>
+            <ul class="nav flex-colum" id="cityList"></ul>
+          </div>
+        </nav>
+
+        <main class="col-md-9 p-4">
+          <div class="box p-3" id="cityWeatherSummary">
+            <h3><strong>City Summary Placeholder</strong></h3>
+            <p class="py-3" >Summary content here</p>
+          </div>
+
+          <div>
+            <p id="cityWeather5Day"><h4>5-Day Forecast:</h4></p>
+          </div>
+        </main>
+
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./script.js"></script>
+
+  </body>
+</html>
