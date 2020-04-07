@@ -4,24 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Bootstrap inclusion -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <!-- Google Font Awesome inclusion -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     />
+    <!-- Google font API inclusion -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- Custom stylesheet -->
     <link rel="stylesheet" href="./style.css" />
 
     <title>Weather Dashboard</title>
   </head>
 
   <body>
+    <!-- Top Nav bar -->
     <div class="row-md-12">
     <header class="navbar navbar-dark bg-dark flex-md-nowrap shadow">
       <a class="navbar-brand col-md-12 mr-0 text-center font-weight-bold" href="#">Weather Dashboard</a><br>
@@ -30,21 +35,26 @@
 
     <div class="container-fluid">
       <div class="row">
+        <!-- Side Nav bar start here -->
         <nav class="col-md-3 bg-light sidebar">
           <div class="sidebar-sticky">
           <div>
-            <input class="my-3" placeholder="Search City" id="citySearch"></input>
+            <input class="my-3 p-3 navbox" placeholder="Search City" id="citySearch"></input>
           </div>
             <ul class="nav flex-colum" id="cityList"></ul>
+            <!-- List items created through Script file -->
           </div>
         </nav>
+        <!-- Side Nav bar ends here -->
 
         <main class="col-md-9 p-4">
+          <!-- Selected City summary shown in this div -->
           <div class="box p-3" id="cityWeatherSummary">
             <h3><strong>City Summary Placeholder</strong></h3>
             <p class="py-3" >Summary content here</p>
           </div>
 
+          <!-- Selected City 5 Day weather shown in this div -->
           <div>
             <p id="cityWeather5Day"><h4>5-Day Forecast:</h4></p>
           </div>
@@ -53,7 +63,9 @@
       </div>
     </div>
 
+    <!-- Jquery inclusion -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Custom javascript -->
     <script src="./script.js"></script>
 
   </body>

@@ -15,4 +15,9 @@ $(document).ready(function () {
 
   $("#cityWeather5Day").append();
 
+
+  //localStorage.setItem("key", value);
+  //localStorage.getItem("key");
+  //localStorage.removeItem("key");
+
 });
