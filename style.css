@@ -1,15 +1,15 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1;
-  }
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
 
 .box {
   background-color: transparent;
   color: black;
   border-radius: 0;
   border: 1px solid darkgray;
-  width: 100%;  
+  width: 100%;
 }
 
 .navbox {
@@ -19,22 +19,17 @@ body {
   border: 1px solid lightgray;
   width: 100%;
   height: 50px;
+}
+
+td {
+  background-color: #3788ff;
+  color: white;
+  border-radius: 20px;
+  border: 10px solid white;
+  width: 150px;
   padding: 15px 0;
 }
 
-a, a:link, a:visited {
-  color: darkgray;
+.btn {
+color: darkgray;
 }
-
-a:hover {
-  text-decoration: none;
-}
-/* 
-td {
-background-color: blue;
-color: white;
-border-radius: 2;
-border: 1px solid lightgray;
-width: 150px;
-padding: 15px 0;
-} */

@@ -1,77 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap inclusion -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <!-- Google Font Awesome inclusion -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    />
-    <!-- Google font API inclusion -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Custom stylesheet -->
-    <link rel="stylesheet" href="./style.css" />
+  <!-- Bootstrap inclusion -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <!-- Google Font Awesome inclusion -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+  <!-- Google font API inclusion -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
 
-    <title>Weather Dashboard</title>
-  </head>
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="./style.css" />
 
-  <body>
-    <!-- Top Nav bar -->
-    <div class="row-md-12">
+  <title>Weather Dashboard</title>
+</head>
+
+<body>
+  <!-- Top Nav bar -->
+  <div class="row-md-12">
     <header class="navbar navbar-dark bg-dark flex-md-nowrap shadow">
       <a class="navbar-brand col-md-12 mr-0 text-center font-weight-bold" href="#">Weather Dashboard</a><br>
-    </div>
-    </header>
+  </div>
+  </header>
 
-    <div class="container-fluid">
-      <div class="row">
-        <!-- Side Nav bar start here -->
-        <nav class="col-md-3 bg-light sidebar">
-          <div class="sidebar-sticky">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Side Nav bar start here -->
+      <nav class="col-md-3 bg-light sidebar">
+        <div class="sidebar-sticky">
           <div>
             <form id="citysearch-form" method="POST">
-            <input type="text" class="my-3 p-3 navbox" placeholder="Search City" id="citySearch"></input>
-          </form>
+              <input type="text" class="my-3 p-3 navbox" placeholder="Search City" id="citySearch"></input>
+            </form>
           </div>
-            <ul class="nav flex-colum" id="cityList"></ul>
-            <!-- List items created through Script file -->
-          </div>
-        </nav>
-        <!-- Side Nav bar ends here -->
+          <ul class="nav flex-colum" id="cityList"></ul>
+          <!-- List items created through Script file -->
+        </div>
+      </nav>
+      <!-- Side Nav bar ends here -->
 
-        <main class="col-md-9 p-4">
-          <!-- Selected City summary shown in this div -->
-          <div class="box p-3" id="cityWeatherSummary">
-            <!-- <h3><strong>City Summary Placeholder</strong></h3> -->
-            <!-- <p class="py-3" >Summary content here</p> -->
-          </div>
+      <main class="col-md-9 p-4">
+        <!-- Selected City summary shown in this div -->
+        <div class="box p-3" id="cityWeatherSummary">
+        </div>
 
-          <!-- Selected City 5 Day weather shown in this div -->
-          <div>
-            <p id="cityWeather5Day"><h4>5-Day Forecast:</h4></p>
-          </div>
-        </main>
+        <!-- Selected City 5 Day weather shown in this div -->
+        <div>
+          <p>
+            <h4>5-Day Forecast:</h4>
+          </p>
+          <table>
+            <tr id="cityWeather5Day">
+            </tr>
+          </table>
+        </div>
+      </main>
 
-      </div>
     </div>
+  </div>
 
-    <!-- Jquery inclusion -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <!-- Custom javascript -->
-    <script src="./script.js"></script>
+  <!-- Jquery inclusion -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <!-- Custom javascript -->
+  <script src="./script.js"></script>
 
-  </body>
+</body>
+
 </html>
