@@ -14,7 +14,7 @@ function loadCitySummary(City) {
 
   $.ajax({
     url: queryURL,
-    method: "GET",
+    method: "POST",
   }).then(function (response) {
     var cityTitle = $("<h3><strong>").text(response.list[0].name + " (" + moment().format("MM/DD/YYYY") + ")");
     var citySummary = $("<br><p>").text("Temperature: " + Math.round(response.list[0].main.temp) + " °F");
@@ -38,7 +38,7 @@ function load5Day(lat, lon) {
   
   $.ajax({
     url: query5dURL,
-    method: "GET",
+    method: "POST",
   }).then(function (response) {
     var uvind = $("<p>").text("UV Index: " + response.current.uvi);
     $("#cityWeatherSummary").append(uvind);
