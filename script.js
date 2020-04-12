@@ -23,7 +23,7 @@ function loadCitySummary(City) {
     var lat = response.list[0].coord.lat;
     var lon = response.list[0].coord.lon;
     load5Day(lat, lon);
-    $(cityTitle).append('<img src="http://openweathermap.org/img/wn/' + response.list[0].weather[0].icon + '.png" />');
+    $(cityTitle).append('<img src="https://openweathermap.org/img/wn/' + response.list[0].weather[0].icon + '.png" />');
 
     $("#cityWeatherSummary").empty();
     $("#cityWeatherSummary").append(cityTitle, citySummary, humidity, windSpeed);
@@ -46,7 +46,7 @@ function load5Day(lat, lon) {
 
     for (i = 1; i < 6; i++) {
       var dateDisp = $('<td class="px-2"><p>').text(moment.unix(response.daily[i].dt).format("MM/DD/YYYY"));
-      var iconDisp = $("<p>").append('<img src="http://openweathermap.org/img/wn/' + response.daily[i].weather[0].icon + '.png" />');
+      var iconDisp = $("<p>").append('<img src="https://openweathermap.org/img/wn/' + response.daily[i].weather[0].icon + '.png" />');
       var tempDisp = $("<p>").text('Temp: ' + Math.round(response.daily[i].temp.day) + '°F');
       var humidityDisp = $("<p>").text('Humidity: ' + Math.round(response.daily[i].humidity) + '%');
       $(dateDisp).append("<p>", iconDisp, tempDisp, humidityDisp);
